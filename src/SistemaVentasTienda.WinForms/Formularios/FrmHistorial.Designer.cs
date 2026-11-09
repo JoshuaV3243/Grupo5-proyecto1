@@ -58,6 +58,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             raiz.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48F));
             raiz.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             pnlCabecera.Name = "pnlCabecera";
+            pnlCabecera.Margin = new System.Windows.Forms.Padding(0);
             pnlCabecera.Dock = System.Windows.Forms.DockStyle.Fill;
             pnlCabecera.BackColor = System.Drawing.Color.FromArgb(29, 53, 87);
             pnlCabecera.Margin = new System.Windows.Forms.Padding(0);
@@ -74,6 +75,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             lblSubtitulo.ForeColor = System.Drawing.Color.White;
             lblSubtitulo.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             pnlFiltros.Name = "pnlFiltros";
+            pnlFiltros.Margin = new System.Windows.Forms.Padding(0);
             pnlFiltros.Dock = System.Windows.Forms.DockStyle.Fill;
             lblDesde.Name = "lblDesde";
             lblDesde.Location = new System.Drawing.Point(16, 5);
@@ -128,6 +130,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             dgvDetalles.Dock = System.Windows.Forms.DockStyle.Fill;
             dgvDetalles.Margin = new System.Windows.Forms.Padding(16, 0, 16, 0);
             pnlPie.Name = "pnlPie";
+            pnlPie.Margin = new System.Windows.Forms.Padding(0);
             pnlPie.Dock = System.Windows.Forms.DockStyle.Fill;
             lblResumen.Name = "lblResumen";
             lblResumen.Location = new System.Drawing.Point(16, 8);

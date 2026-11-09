@@ -63,7 +63,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
         {
             if (ventas == null) return;
             decimal total = ventas.CalcularTotal();
-            lblTotal.Text = "TOTAL CRC " + total.ToString("N2");
+            lblTotal.Text = "TOTAL CRC\n" + total.ToString("N2");
             bool esEfectivo = cboPago.SelectedIndex == (int)MedioPago.Efectivo;
             nudRecibido.Enabled = esEfectivo;
             if (!esEfectivo) nudRecibido.Value = total;

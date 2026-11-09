@@ -10,4 +10,14 @@
   <ItemGroup>
     <ProjectReference Include="..\SistemaVentasTienda.Core\SistemaVentasTienda.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Formularios\FrmPrincipal.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios\FrmProductos.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios\FrmVentas.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios\FrmHistorial.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="Formularios\FrmPrincipal.Designer.cs"><DependentUpon>FrmPrincipal.cs</DependentUpon></Compile>
+    <Compile Update="Formularios\FrmProductos.Designer.cs"><DependentUpon>FrmProductos.cs</DependentUpon></Compile>
+    <Compile Update="Formularios\FrmVentas.Designer.cs"><DependentUpon>FrmVentas.cs</DependentUpon></Compile>
+    <Compile Update="Formularios\FrmHistorial.Designer.cs"><DependentUpon>FrmHistorial.cs</DependentUpon></Compile>
+  </ItemGroup>
 </Project>

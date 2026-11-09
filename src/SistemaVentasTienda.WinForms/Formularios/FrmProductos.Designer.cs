@@ -75,6 +75,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             raiz.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             raiz.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             pnlCabecera.Name = "pnlCabecera";
+            pnlCabecera.Margin = new System.Windows.Forms.Padding(0);
             pnlCabecera.Dock = System.Windows.Forms.DockStyle.Fill;
             pnlCabecera.BackColor = System.Drawing.Color.FromArgb(29, 53, 87);
             pnlCabecera.Margin = new System.Windows.Forms.Padding(0);
@@ -91,6 +92,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             lblSubtitulo.ForeColor = System.Drawing.Color.White;
             lblSubtitulo.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             pnlFiltro.Name = "pnlFiltro";
+            pnlFiltro.Margin = new System.Windows.Forms.Padding(0);
             pnlFiltro.Dock = System.Windows.Forms.DockStyle.Fill;
             lblBuscar.Name = "lblBuscar";
             lblBuscar.Location = new System.Drawing.Point(16, 12);
@@ -201,6 +203,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             lblCantidad.Dock = System.Windows.Forms.DockStyle.Fill;
             lblCantidad.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             pnlPie.Name = "pnlPie";
+            pnlPie.Margin = new System.Windows.Forms.Padding(0);
             pnlPie.Dock = System.Windows.Forms.DockStyle.Fill;
             lblEstado.Name = "lblEstado";
             lblEstado.Location = new System.Drawing.Point(18, 8);
@@ -213,7 +216,6 @@ namespace SistemaVentasTienda.WinForms.Formularios
             btnCerrar.Text = "Volver al menú";
             btnCerrar.UseVisualStyleBackColor = true;
             btnCerrar.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            errores.Name = "errores";
             errores.ContainerControl = this;
             errores.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
             this.Controls.Add(raiz);

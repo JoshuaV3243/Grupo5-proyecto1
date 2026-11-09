@@ -52,6 +52,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             raiz.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             raiz.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             pnlCabecera.Name = "pnlCabecera";
+            pnlCabecera.Margin = new System.Windows.Forms.Padding(0);
             pnlCabecera.Dock = System.Windows.Forms.DockStyle.Fill;
             pnlCabecera.BackColor = System.Drawing.Color.FromArgb(29, 53, 87);
             pnlCabecera.Margin = new System.Windows.Forms.Padding(0);
@@ -124,6 +125,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             lblAviso.Padding = new System.Windows.Forms.Padding(28, 4, 20, 4);
             lblAviso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             pnlPie.Name = "pnlPie";
+            pnlPie.Margin = new System.Windows.Forms.Padding(0);
             pnlPie.Dock = System.Windows.Forms.DockStyle.Fill;
             btnSalir.Name = "btnSalir";
             btnSalir.Location = new System.Drawing.Point(844, 8);
@@ -156,7 +158,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
             Font = new System.Drawing.Font("Segoe UI", 9F);
             ClientSize = new System.Drawing.Size(1000, 620);
             MinimumSize = new System.Drawing.Size(900, 600);
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Name = "FrmPrincipal";
             Text = "Sistema de ventas en tienda";
             raiz.ResumeLayout(false);

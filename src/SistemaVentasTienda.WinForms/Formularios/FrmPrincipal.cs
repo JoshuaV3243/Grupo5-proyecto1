@@ -45,7 +45,7 @@ namespace SistemaVentasTienda.WinForms.Formularios
 
         private void ActualizarResumen()
         {
-            int unidades = 0;
+            long unidades = 0;
             var inventario = productos.Buscar("");
             foreach (Producto producto in inventario) unidades += producto.Existencias;
             var ventasHoy = ventas.BuscarVentas(DateTime.Today, DateTime.Today, "");

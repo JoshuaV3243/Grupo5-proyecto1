@@ -1,0 +1,26 @@
+name: Compilar y verificar reglas
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    runs-on: windows-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Preparar SDK de .NET
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: '8.0.x'
+      - name: Compilar solución
+        run: dotnet build SistemaVentasTienda.sln --configuration Release -m:1 -p:TreatWarningsAsErrors=true
+      - name: Verificar inventario y ventas
+        run: dotnet run --project tests/SistemaVentasTienda.Pruebas --configuration Release --no-build
