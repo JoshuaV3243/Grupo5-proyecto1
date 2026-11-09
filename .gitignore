@@ -1,0 +1,10 @@
+# Archivos locales de Visual Studio y resultados de compilación.
+.vs/
+**/bin/
+**/obj/
+*.user
+*.suo
+TestResults/
+*.log
+*.zip
+*.bundle
